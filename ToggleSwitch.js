@@ -40,11 +40,11 @@ export default class ToggleSwitch extends React.Component {
         };
       default:
         return {
-          width: this.props.width !== undefined ? this.props.width : 56,
-          padding: this.props.padding !== undefined ? this.props.padding : 14,
-          circleWidth: this.props.circleWidth !== undefined ? this.props.circleWidth : 18,
-          circleHeight: this.props.circleHeight !== undefined ? this.props.circleHeight : 18,
-          translateX: this.props.translateX !== undefined ? this.props.translateX : 26
+          width: typeof this.props.width !== undefined ? this.props.width : 56,
+          padding: typeof this.props.padding !== undefined ? this.props.padding : 14,
+          circleWidth: typeof this.props.circleWidth !== undefined ? this.props.circleWidth : 18,
+          circleHeight: typeof this.props.circleHeight !== undefined ? this.props.circleHeight : 18,
+          translateX: typeof this.props.translateX !== undefined ? this.props.translateX : 26
         };
     }
   }
